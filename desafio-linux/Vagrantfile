@@ -1,10 +1,12 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+local_interface = ENV["DEFAULT_INTERFACE"] || ""
+
 Vagrant.configure("2") do |config|
   config.vm.box = "getupcloud/teste"
   config.vm.box_version = "0.0.1"
-  config.vm.provider "virtualbox"
+  config.vm.network "public_network", bridge: local_interface
 
   config.vm.provider "virtualbox" do |vb|
     vb.gui = true
