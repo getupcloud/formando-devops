@@ -6,9 +6,11 @@ Sugerimos utilizar um sistema unix (linux, macos, \*bsd) ou [WSL](https://docs.m
 
 Você precisa instalar o [VirtualBox](https://www.virtualbox.org) e opcionalmente (recomendado) o [Vagrant](https://www.vagrantup.com)
 
-Baixe esse repositório e execute na raiz:
+Baixe esse repositório e execute:
 
 ```
+git clone https://github.com/getupcloud/formando-devops.git
+cd desafio-linux
 vagrant up
 ```
 
@@ -18,7 +20,7 @@ Para entrar na VM e iniciar as tarefas, execute:
 vagrant ssh
 ```
 
-O endereço IP da VM pode ser obtido com o comando `ip addr show dev eth0`.
+O endereço IP público da VM pode ser obtido com o comando `ip addr show dev eth1`.
 
 Você pode reiniciar a VM a qualquer momento utilizando a GUI do próprio VirtualBox.
 
