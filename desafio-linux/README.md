@@ -59,7 +59,7 @@ para acessar a VM.
 
 ### 3.3 Análise de logs e configurações ssh
 
-Utilizando a chave do arquivos `id_rsa-desafio-linux-devel.gz.b64` deste repositório, acesso a VM com o usuário `devel`
+Utilizando a chave do arquivos [id_rsa-desafio-linux-devel.gz.b64](id_rsa-desafio-linux-devel.gz.b64) deste repositório, acesso a VM com o usuário `devel`
 
 ## 4. Systemd
 
