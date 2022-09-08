@@ -106,20 +106,20 @@ ping 8.8.8.8
 
 Apresente a resposta completa, com headers, da URL `https://httpbin.org/response-headers?hello=world`
 
-## Logs
+## 7. Logs
 
 Configure o `logrotate` para rotacionar arquivos do diretório `/var/log/nginx`
 
-## 7. Filesystem
+## 8. Filesystem
 
-### 7.1 Expandir partição LVM
+### 8.1 Expandir partição LVM
 
 Aumente a partição LVM `sdb1` para `5Gi` e expanda o filesystem para o tamanho máximo.
 
-### 7.2 Criar partição LVM
+### 8.2 Criar partição LVM
 
 Crie uma partição LVM `sdb2` com `5Gi` e formate com o filesystem `ext4`.
 
-### 7.3 Criar partição XFS
+### 8.3 Criar partição XFS
 
 Utilizando o disco `sdc` em sua todalidade (sem particionamento), formate com o filesystem `xfs`.
