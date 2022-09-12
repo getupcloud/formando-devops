@@ -43,7 +43,7 @@ aws cloudformation describe-stacks --region us-east-1 --query "Stacks[?StackName
 
 Se tudo ocorreu bem até aqui, você verá um texto que remete ao desafio e o recurso que acabou de ser criado.
 
-Agora, tome um tempo para analisar os recursos que foram criados e suas configurações. Após isso, destrua esse ambiente e vamos ao desafio!
+Agora, reserve um tempo para analisar os recursos que foram criados e suas configurações. Após isso, **destrua esse ambiente** e vamos ao desafio!
 
 ```
 aws cloudformation delete-stack --region us-east-1 --stack-name "$STACK_NAME"
@@ -53,7 +53,7 @@ aws cloudformation delete-stack --region us-east-1 --stack-name "$STACK_NAME"
 
 ## 1 - Setup de ambiente
 
-Execute os mesmos passos de criação de ambiente descritos anteriormente, *porém* atenção: dessa vez utilize o arquivo "formandodevops-desafio-aws.json"
+Execute os mesmos passos de criação de ambiente descritos anteriormente, ***porém atenção:*** dessa vez utilize o arquivo "formandodevops-desafio-aws.json"
 
 ```
 export STACK_FILE="file://formandodevops-desafio-aws.json"
@@ -64,28 +64,37 @@ aws cloudformation wait stack-create-complete --stack-name "$STACK_NAME"
 
 ## 2 - Networking
 
-A página web dessa vez não está sendo exibida corretamente. Verifique as *configurações de rede* que estão impedindo seu funcionamento.
+A página web dessa vez não está sendo exibida corretamente. Verifique as **configurações de rede** que estão impedindo seu funcionamento.
 
 
 
 ## 3 - EC2 Access
 
-Para acessar a EC2 por SSH, você precisa de uma key pair, que não está disponível. Pesquise como alterar a key pair de uma EC2. Após trocar a key pair e acessar a EC2, altere o texto da página web exibida, colocando seu nome no início do texto do arquivo "/var/www/html/index.html".
+Para acessar a EC2 por SSH, você precisa de uma *key pair*, que **não está disponível**. Pesquise como alterar a key pair de uma EC2.
+
+Após trocar a key pair
+
+1 - acesse a EC2:
+```
+ssh -i [sua-key-pair] ec2-user@[ip-ec2]
+```
+
+2 - Altere o texto da página web exibida, colocando seu nome no início do texto do arquivo ***"/var/www/html/index.html"***.
 
 
 
 ## 4 - EC2 troubleshooting
 
-No último procedimento, A EC2 precisou ser desligada e após isso o serviço responsável pela página web não iniciou. Encontre o problema e realize as devidas alterações para que esse serviço inicie automaticamente durante o boot da EC2.
+No último procedimento, A EC2 precisou ser desligada e após isso o serviço responsável pela página web não iniciou. Encontre o problema e realize as devidas alterações para que esse **serviço inicie automaticamente durante o boot** da EC2.
 
 
 
 ## 5 - Balanceamento
 
-Crie uma cópia idêntica de de sua EC2 e inicie essa segunda EC2. Após isso, crie um balanceador, configure ambas EC2 nesse balancedor e garanta que, mesmo que uma das EC2 esteja desligada, o usuário final conseguirá acessar a página web.
+Crie uma cópia idêntica de de sua EC2 e inicie essa segunda EC2. Após isso, crie um balanceador, configure ambas EC2 nesse balancedor e garanta que, **mesmo com uma das EC2 desligada, o usuário final conseguirá acessar a página web.**
 
 
 
 ## 6 - Segurança
 
-Garanta que o acesso para suas EC2 ocorra somente através do balanceador, ou seja, chamadas HTTP diretamente realizadas da sua máquina para o EC2 deverão ser barradas. Elas só aceitarão chamadas do balanceador e esse, por sua vez, aceitará conexões externas normalmente.
+Garanta que o acesso para suas EC2 ocorra somente através do balanceador, ou seja, chamadas HTTP diretamente realizadas da sua máquina para o EC2 deverão ser barradas. Elas **só aceitarão chamadas do balanceador** e esse, por sua vez, aceitará conexões externas normalmente.
