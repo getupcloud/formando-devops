@@ -71,7 +71,7 @@ No último procedimento, A EC2 precisou ser desligada e após isso o serviço re
 
 5 - Balanceamento
 
-Crie uma cópia idêntica de de sua EC2 e inicie essa segunda EC2. Após isso, crie um balanceador, configure ambas EC2 nesse balancedor e garanta que mesmo uma das EC2 esteja desligada, o usuário final conseguirá acessar a página web.
+Crie uma cópia idêntica de de sua EC2 e inicie essa segunda EC2. Após isso, crie um balanceador, configure ambas EC2 nesse balancedor e garanta que, mesmo que uma das EC2 esteja desligada, o usuário final conseguirá acessar a página web.
 
 6 - Segurança
 
