@@ -7,7 +7,7 @@ O formato é livre. Quanto mais sucinto e direto, melhor. Envie o endereço do s
 
 1 - Você precisa instalar e configurar o aws-cli em seu equipamento: [AWS CLI Install](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
-2 - Obtenha o AccessKey e SecretKey do seu usuário [AWS CLI Install](https://docs.aws.amazon.com/pt_br/IAM/latest/UserGuide/id_credentials_access-keys.html) e configure o aws cli:
+2 - Obtenha o AccessKey e SecretKey do seu usuário e configure o aws cli:
 
 ```
 aws configure
@@ -16,6 +16,8 @@ AWS Secret Access Key [****************.]: [SEU SECRET KEY AQUI]
 Default region name []: us-east-1
 Default output format [None]:
 ```
+Dúvidas: [AWS CLI Credentials](https://docs.aws.amazon.com/pt_br/IAM/latest/UserGuide/id_credentials_access-keys.html)
+
 
 # Criação do Ambiente de Controle
 
