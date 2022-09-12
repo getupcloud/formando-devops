@@ -53,7 +53,8 @@ aws cloudformation delete-stack --region us-east-1 --stack-name "$STACK_NAME"
 
 1 - Setup de ambiente
 
-Execute os mesmos passos anteriores, porém atenção: dessa vez utilize o arquivo "formandodevops-awsdesafio.json"
+Execute os mesmos passos de criação de ambiente descritos anteriormente, *porém* atenção: dessa vez utilize o arquivo "formandodevops-awsdesafio.json"
+
 
 
 2 - Networking
