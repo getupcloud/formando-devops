@@ -50,20 +50,26 @@ aws cloudformation delete-stack --region us-east-1 --stack-name "$STACK_NAME"
 # Desafio AWS
 
 1 - Setup de ambiente
+
 Execute os mesmos passos anteriores, porém atenção: dessa vez utilize o arquivo "formandodevops-awsdesafio.json"
 
 
 2 - Networking
+
 A página web dessa vez não está sendo exibida corretamente. Verifique as *configurações de rede* que estão impedindo seu funcionamento.
 
 3 - EC2 Access
+
 Para acessar a EC2 por SSH, você precisa de uma key pair, que não está disponível. Pesquise como alterar a key pair de uma EC2. Após trocar a key pair e acessar a EC2, altere o texto da página web exibida, colocando seu nome no início do texto do arquivo "/var/www/html/index.html".
 
 4 - EC2 troubleshooting
+
 No último procedimento, A EC2 precisou ser desligada e após isso o serviço responsável pela página web não iniciou. Encontre o problema e realize as devidas alterações para que esse serviço inicie automaticamente durante o boot da EC2.
 
 5 - Balanceamento
+
 Crie uma cópia idêntica de de sua EC2 e inicie essa segunda EC2. Após isso, crie um balanceador, configure ambas EC2 nesse balancedor e garanta que mesmo uma das EC2 esteja desligada, o usuário final conseguirá acessar a página web.
 
 6 - Segurança
+
 Garanta que o acesso para suas EC2 ocorra somente através do balanceador, ou seja, chamadas HTTP diretamente realizadas da sua máquina para o EC2 deverão ser barradas. Elas só aceitarão chamadas do balanceador e esse, por sua vez, aceitará conexões externas normalmente.
