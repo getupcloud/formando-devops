@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: 2010-09-09
-Description:  Formando DevOps - AWS Challenge
+Description:  Formando DevOps - Ambiente Controle
     
 Mappings:
   RegionMap:
