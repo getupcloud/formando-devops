@@ -23,7 +23,7 @@ Baixe esse repositório e execute:
 ```
 cd desafio-aws
 export STACK_NAME="stack-controle"
-export STACK_FILE="file://formandodevops-awscontrole.json"
+export STACK_FILE="file://aws-controle.json"
 aws cloudformation create-stack --region us-east-1 --template-body "$STACK_FILE" --stack-name "$STACK_NAME" --no-cli-pager
 aws cloudformation wait stack-create-complete --stack-name "$STACK_NAME" (esse comando não possui output. Apenas liberará seu terminal quando a criação da stack finalizar)
 ```
