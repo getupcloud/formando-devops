@@ -1,7 +1,8 @@
 # Desafio AWS
 
-As questões abaixo devem ser respondidas no arquivo [RESPOSTAS-AWS.md](RESPOSTAS-AWS.md) em um fork desse repositório.
-O formato é livre. Quanto mais sucinto e direto, melhor. Envie o endereço do seu repositório para desafio@getupcloud.com.
+As questões abaixo devem ser respondidas no arquivo [RESPOSTAS-AWS.md](RESPOSTAS-AWS.md) em um fork desse repositório. Algumas questões necessitam de evidências visuais. Nesses casos, um snapshot da tela com o resultado esperado é o suficiente.
+Nas demais questões, o formato é livre. Quanto mais sucinto e direto, melhor.
+Envie o endereço do seu repositório para desafio@getupcloud.com.
 
 # Preparação Inicial
 
@@ -91,7 +92,7 @@ No último procedimento, A EC2 precisou ser desligada e após isso o serviço re
 
 ## 5 - Balanceamento
 
-Crie uma cópia idêntica de de sua EC2 e inicie essa segunda EC2. Após isso, crie um balanceador, configure ambas EC2 nesse balancedor e garanta que, **mesmo com uma das EC2 desligada, o usuário final conseguirá acessar a página web.**
+Crie uma cópia idêntica de sua EC2 e inicie essa segunda EC2. Após isso, crie um balanceador, configure ambas EC2 nesse balancedor e garanta que, **mesmo com uma das EC2 desligada, o usuário final conseguirá acessar a página web.**
 
 
 
