@@ -1,6 +1,6 @@
 # Desafio GitLab
 
-As questões abaixo devem ser respondidas no arquivo [RESPOSTAS-GITLAB.md](RESPOSTAS-AWS.md) em um fork desse repositório. Algumas questões necessitam de evidências visuais. Nesses casos, um screenshot da tela com o resultado esperado é o suficiente.
+As questões abaixo devem ser respondidas no arquivo [RESPOSTAS.md](RESPOSTAS.md) em um fork desse repositório. Algumas questões necessitam de evidências visuais. Nesses casos, um screenshot da tela com o resultado esperado é o suficiente.
 Nas demais questões, o formato é livre. Quanto mais sucinto e direto, melhor.
 Envie o endereço do seu repositório para desafio@getupcloud.com.
 
@@ -30,4 +30,4 @@ O GitLab Pages é um serviço de hospedagem de páginas estáticas, que permite 
 
 10. Acesse a página inicial do seu projeto no Gitlab e verifique se o texto foi alterado.
 
-11. Adicione no arquivo [RESPOSTAS-GITLAB.md](RESPOSTAS-AWS.md) o link para o seu repositório e o log do git com o histórico de commits. Envie também um screenshot da Gitlab Page criada.
+11. Adicione no arquivo [RESPOSTAS.md](RESPOSTAS.md) o link para o seu repositório e o log do git com o histórico de commits. Envie também um screenshot da Gitlab Page criada.
