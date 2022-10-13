@@ -1,4 +1,6 @@
-# Desafio Kubernetes
+# Estamos preparando o desafio de Docker, ele entrará aqui, mas se quiserem, podem esquentar com as questões de kubernetes
+
+# Desafio  Docker/Kubernetes
 
 As questões abaixo devem ser respondidas no arquivo [RESPOSTAS-kube.md](RESPOSTAS-kube.md) em um fork desse repositório. Por ordem e numeradamente. O formato é livre, mas recomanda-se as linhas de comando utilizadas para criar ou alterar resources de cada questão na maioria dos casos. Quanto mais sucinto e direto, melhor. Envie o endereço do seu repositório para desafio@getupcloud.com.
 
