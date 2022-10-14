@@ -1,8 +1,32 @@
-# Estamos preparando o desafio de Docker, ele entrará aqui, mas se quiserem, podem esquentar com as questões de kubernetes
+# Desafio Docker
 
-# Desafio  Docker/Kubernetes
+As questões abaixo devem ser respondidas no arquivo [RESPOSTAS-docker.md](RESPOSTAS-docker.md) em um fork desse repositório. Quanto mais sucinto e direto, melhor. Envie o endereço do seu repositório para desafio@getupcloud.com.
 
-As questões abaixo devem ser respondidas no arquivo [RESPOSTAS-kube.md](RESPOSTAS-kube.md) em um fork desse repositório. Por ordem e numeradamente. O formato é livre, mas recomanda-se as linhas de comando utilizadas para criar ou alterar resources de cada questão na maioria dos casos. Quanto mais sucinto e direto, melhor. Envie o endereço do seu repositório para desafio@getupcloud.com.
+1. Execute o comando `hostname` em um container usando a imagem `alpine`. Certifique-se que o container será removido após a execução.
+
+2. Crie um container com a imagem `nginx` (versão 1.22), expondo a porta 80 do container para a porta 8080 do host.
+
+3. Faça o mesmo que a questão anterior (2), mas utilizando a porta 90 no container. O arquivo de configuração do nginx deve existir no host e ser read-only no container.
+
+4. Construa uma imagem para executar o programa abaixo:
+
+```python
+def main():
+   print('Hello World in Python!')
+
+if __name__ == '__main__':
+  main()
+```
+
+5. Execute um container da imagem `nginx` com limite de memória 128MB e 1/2 CPU.
+
+6. Qual o comando usado para limpar recursos como imagens, containers parados, cache de build e networks não utilizadas?
+
+7. Como você faria para extrair os comandos Dockerfile de uma imagem?
+
+# Desafio Kubernetes
+
+As questões abaixo devem ser respondidas no arquivo [RESPOSTAS-kube.md](RESPOSTAS-kube.md) em um fork desse repositório. Por ordem e numeradamente. O formato é livre, mas recomenda-se as linhas de comando utilizadas para criar ou alterar resources de cada questão na maioria dos casos. Quanto mais sucinto e direto, melhor. Envie o endereço do seu repositório para desafio@getupcloud.com.
 
 Ex. de respostas:
 
