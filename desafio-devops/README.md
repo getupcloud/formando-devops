@@ -13,9 +13,9 @@ Envie a URL do seu repositório para desafio@getupcloud.com.
 
 ```
   -> pipeline com build da imagem do app
-     -> [plus] linter do Dockerfile (tip: use o [hadolint](https://github.com/hadolint/hadolint))
-        -> falhar se houver severidade > Warning
-  -> [plus] scan da imagem usando [trivy](https://github.com/aquasecurity/trivy) standalone (binário)
+     -> [plus] linter do Dockerfile (tip: use o https://github.com/hadolint/hadolint)
+        -> falhar se houver severidade >= Warning
+  -> [plus] scan da imagem usando Trivy (https://github.com/aquasecurity/trivy) standalone (binário)
      -> falhar se houver bug crítico
 ```
 
